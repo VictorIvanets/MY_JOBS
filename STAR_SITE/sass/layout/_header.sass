@@ -1,0 +1,251 @@
+.header  
+    height: 95vh
+    background: linear-gradient(30deg, rgba(0, 0, 0, 1) 20%, rgba(2,0,2,0.1) 40%, rgba(2,0,2,0.1) 40%, rgba(0, 0, 0, 1) 99%), url(../img/mark-basarab-1OtUkD_8svc-unsplash.jpg) center / cover no-repeat
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%)
+   
+
+    &__logo
+        position: relative
+        width: 25rem
+        top: 5rem
+        left: 5rem
+    &__box
+        width: 50%
+        text-align: center
+        margin: 0 auto
+        position: relative
+        top: 20%
+        
+        animation-name: LeftToRight
+        animation-duration: 3s
+        backface-visibility: hidden // убирает просвечевание и "дёргание"
+        // animation-delay: 1s //задержка
+        // animation-timing-function: ease-in // плавный старт
+.part1
+    height: 40rem
+    margin-bottom: 2rem
+
+.part2
+    height: 60rem
+    background: url(../img/guillermo-ferla-QfLm-2AiJ_M-unsplash.jpg) center / cover no-repeat
+    clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%)
+ 
+.section-ship
+    text-align: center
+.box-part2
+    margin-top: 15rem
+    margin-left: 2rem
+    background: rgb(147, 206, 214)
+    height: 30rem
+    border-radius: 0.7rem
+    opacity: 0.7
+    padding: 2rem
+    text-align: center
+    box-shadow: $shadow2
+    backface-visibility: hidden
+    transition: All .2s
+    &:last-child
+        margin-right: 2rem
+    &:hover
+        scale: 110%
+        backface-visibility: hidden
+        transition: All .2s
+        background: rgb(188, 240, 247)
+        opacity: 1
+
+.img-container
+    width: 100% 
+    height: 45%
+    margin-bottom: 1rem
+    position: relative
+    text-align: center
+    &__img-icon 
+        width: 90% 
+        cursor: pointer
+        backface-visibility: hidden
+
+        &:active
+            position: relative
+            left: -35%
+            top: -22%
+            width: 175%
+            z-index: 2
+            transition: All .8s
+            backface-visibility: hidden
+
+.text-container
+    width: 100% 
+    height: 35%
+.btn-container
+    margin-top: 1rem
+    width: 100% 
+    height: 20%
+
+
+
+.part3
+    height: 60rem
+    background: url(../img/jonatan-pie-3l3RwQdHRHg-unsplash.jpg) center / cover no-repeat
+    clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%)
+ 
+.section-ship
+    text-align: center
+
+.box-part3
+    margin-top: 15rem
+    margin-left: 2rem
+    height: 30rem
+    padding: 2rem
+    text-align: center
+    backface-visibility: hidden
+    transition: All .3s
+    // perspective: 150rem
+
+
+    &:last-child
+        margin-right: 2rem
+    &:hover
+        scale: 110%
+        backface-visibility: hidden
+        transition: All .2s
+        opacity: 1
+    // &:active
+    //     transform: rotateY(180deg)
+    //     background: #000
+        
+
+.img-containerP
+    width: 100% 
+    height: 60%
+    margin-bottom: 1rem
+    position: relative
+    text-align: center
+    &__img-icon 
+        position: relative
+        width: 70% 
+        top: -30%
+        backface-visibility: hidden
+        transition: All .3s
+        &:active
+            scale: 130%
+            transition: All .3s
+        &_back 
+            width: 100% 
+            margin-top: 2rem
+            box-shadow: $shadow2
+            border-radius: 0.5rem
+            backface-visibility: hidden
+            transition: All .2s
+            cursor: pointer
+
+            &:active
+                scale: 150%
+                z-index: 2
+                transition: All .2s
+                backface-visibility: hidden
+
+
+
+
+
+.text-containerP
+    width: 100% 
+    height: 20%
+    color: white
+.btn-containerP
+    margin-top: 1rem
+    width: 100% 
+    height: 20%
+
+
+
+
+
+
+
+.section-ticket
+    text-align: center
+    &__part
+        height: 60rem
+        background: url(../img/andrey-zvyagintsev-N7_7UoPwMD4-unsplash.jpg) center / cover no-repeat
+        clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%)
+        background-blend-mode: darken 
+
+        &__img-container
+            width: 100% 
+            height: 65%
+            margin-bottom: 1rem
+            position: relative
+            text-align: center
+            &__img-icon 
+                width: 90% 
+                backface-visibility: hidden
+            // &:active
+            //     position: relative
+            //     left: -35%
+            //     top: -22%
+            //     width: 175%
+            //     z-index: 2
+            //     transition: All .8s
+            //     backface-visibility: hidden
+
+    &__text-container
+        width: 100% 
+        height: 35%
+    // &__btn-container
+    //     margin-top: 1rem
+    //     width: 100% 
+    //     height: 20%
+
+    
+.box-part
+    height: 30rem
+    perspective: 150rem
+    position: relative
+    &:last-child
+        margin-right: 2rem
+    &__side
+        height: 30rem
+        transition: All .7s ease-out
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        backface-visibility: hidden
+        margin-top: 15rem
+        margin-left: 2rem
+        height: 30rem
+        border-radius: 0.7rem
+        padding: 2rem
+        text-align: center
+        box-shadow: $shadow2
+
+        &_front
+            background: rgba(190, 217, 240, 0.76)
+
+        &_back
+            background: $color-brown-grad
+            transform: rotateY(180deg)
+            color: white
+            padding: 0.2rem
+
+    &:hover &__side_front
+        transform: rotateY(-180deg)
+    &:hover &__side_back
+        transform: rotateY(0deg)
+            
+.footer
+    background-color: $color-dblue
+    height: 20rem
+    &__text
+        padding: 4rem
+        color: white
+        letter-spacing: 0.1rem
+        text-align: right
+        &__li
+            margin-bottom: 1.1rem
+            &:last-child
+                margin-bottom: 0
+
+
+
