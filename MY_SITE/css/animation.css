@@ -1,0 +1,172 @@
+.margin-bottom_60px {
+  margin-bottom: 6rem;
+}
+
+.margin-bottom_40px {
+  margin-bottom: 4rem;
+}
+
+.margin-bottom_30px {
+  margin-bottom: 3rem;
+}
+
+.margin-bottom_20px {
+  margin-bottom: 2rem;
+}
+
+.margin-bottom_10px {
+  margin-bottom: 1rem;
+}
+
+.margin-top_20px {
+  margin-top: 1rem;
+}
+
+.margin-top_30px {
+  margin-top: 3rem;
+}
+
+.color-white {
+  color: white;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+@font-face {
+  font-family: "helv";
+  src: url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "helvT";
+  src: url("../fonts/HelveticaNeueCyr-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvet Bold";
+  src: url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Comfortaa-Light";
+  src: url("../fonts/Comfortaa-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Comfortaa-Medium";
+  src: url("../fonts/Comfortaa-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.navigator__toggle {
+  display: none;
+}
+.navigator__button {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 2.1rem;
+  right: 1.5rem;
+  z-index: 70;
+  text-align: center;
+  cursor: pointer;
+  transition: All 0.5s ease-out;
+}
+.navigator__background {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: radial-gradient(rgb(75, 11, 0), rgb(0, 0, 0));
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 50;
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+}
+.navigator__nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 60;
+  transition: All 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  backface-visibility: hidden;
+  opacity: 0;
+  width: 0;
+}
+.navigator__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+.navigator__item {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.navigator__link:link, .navigator__link:visited {
+  font-size: 2rem;
+  font-family: "Comfortaa-Medium";
+  letter-spacing: 0.5rem;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(120deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, white 50%);
+  background-size: 250%;
+  border-radius: 0.3rem;
+  padding: 0.3rem 2rem;
+  transition: All 0.7s ease-out;
+  display: inline-block;
+}
+.navigator__link:hover, .navigator__link:active {
+  background-position: 100%;
+  color: rgb(75, 11, 0);
+  transform: translateX(1rem);
+}
+.navigator__toggle:checked ~ .navigator__background {
+  scale: 5000%;
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+}
+.navigator__toggle:checked ~ .navigator__nav {
+  opacity: 1;
+  width: 100%;
+  transition: All 0.7s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  backface-visibility: hidden;
+}
+.navigator__icon {
+  width: 100%;
+  text-align: center;
+  transform: rotate(0deg);
+  transition: All 0.7s ease-out;
+  opacity: 1;
+  backface-visibility: hidden;
+}
+.navigator__icon:hover {
+  transform: rotate(360deg);
+  transition: All 0.7s ease-out;
+}
+.navigator__icon:active {
+  transform: rotate(-360deg);
+  transition: All 0.5s ease-out;
+}
+.navigator__toggle:checked ~ .navigator__button {
+  transition: All 0.5s ease-out;
+  opacity: 0.7;
+  scale: 50%;
+  backface-visibility: hidden;
+}
+.navigator__span {
+  font-size: 1rem;
+  font-family: "Comfortaa-Light";
+  letter-spacing: 0.1rem;
+}/*# sourceMappingURL=animation.css.map */

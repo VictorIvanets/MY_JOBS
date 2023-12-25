@@ -7,7 +7,7 @@ function timerPlus(){
 
     setTimeout(function(){
         document.querySelector(".blok2").classList.add("hidden-for-blok2")
-        },5000)    
+        },2000)    
 
         setTimeout(function(){
             document.querySelector(".blok3").classList.add("hidden-for-blok3")

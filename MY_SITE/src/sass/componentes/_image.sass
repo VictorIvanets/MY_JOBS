@@ -1,0 +1,32 @@
+.img-small
+    position: relative
+    overflow: hidden
+    height: 40rem
+    
+    &__photo
+        width: 50%
+        transition: All .3s
+        backface-visibility: hidden
+        border-radius: 0.7rem
+        position: relative
+
+        &:hover
+            scale: 110%
+            backface-visibility: hidden
+            z-index: 2
+        &_n1
+            top: 1rem
+            left: 27rem
+        &_n2
+            top: -13rem
+            left: 2rem
+        &_n3
+            top: -18rem
+            left: 21rem
+    &:hover &__photo:not(:hover)
+        scale: 90%
+        filter: grayscale(100%)
+        opacity: 0.8
+
+
+

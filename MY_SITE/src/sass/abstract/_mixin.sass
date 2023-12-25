@@ -1,0 +1,11 @@
+@mixin link-style($color)
+        text-decoration: none
+        color: $color
+        background: $color-blue-grad
+        display: inline-block
+@mixin clearfix
+        &::after
+                content: ""
+                display: table
+                clear: both
+           
