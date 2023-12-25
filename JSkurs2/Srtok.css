@@ -1,0 +1,46 @@
+body
+{
+background: linear-gradient(60deg, rgba(241, 228, 183, 0.8) 0%, rgba(103, 182, 255, 0.7)100%) no-repeat;
+height: 600px;
+}
+
+.container
+{
+text-align: center;
+color: blue;
+font-family: Tahoma;
+
+}
+
+.btn
+{
+    display: block;
+    margin: 0 auto;
+}
+
+.output
+{
+font-size: 20px;
+color: rgb(75, 19, 19);
+border: 2px solid;
+height: 150px;
+width: 300px;
+margin: 0 auto;
+border-radius: 3px;
+
+
+}
+
+.text1,
+.text2,
+.text3,
+.text4,
+.text5
+{
+    height: 30px;
+    width: 210px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+
+}

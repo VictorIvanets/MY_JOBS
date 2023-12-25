@@ -1,0 +1,94 @@
+html
+{
+    font-family:Tahoma;
+}
+
+nav
+{
+background-color: aquamarine;
+font-size: 20pt;
+padding: auto;
+display:inline-flex;
+width: 500px;
+}
+
+.nav__list
+{
+background-color: blueviolet;
+
+}
+
+.new__user1, .new__user2, .new__user3
+{
+color: aliceblue;
+border: 1px;
+border-color: black;
+background-color: rgb(48, 48, 48);
+width: 40%;
+padding: 3px;
+padding-left: 20px;
+}
+
+.nav2
+{
+color: rgb(253, 199, 128);
+background-color: rgb(27, 27, 27);
+font-size: 15pt;
+padding: auto;
+display:block;
+width: 700px;
+}
+
+.nav__list2
+{
+background-color: rgb(0, 80, 69);
+color: aliceblue;
+margin: 5%;
+width: 100%;
+}
+
+
+.boxes
+{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding: 10%;
+}
+
+
+.boxes__box
+
+{
+width: 60px;
+height: 60px;
+border: 5px solid rgb(0, 0, 0);
+border-radius: 5px;
+background-color: rgb(85, 85, 85);
+
+}
+
+
+.boxes2
+
+{
+width: 70px;
+height: 70px;
+border: 5px solid black;
+border-radius: 5px;
+background-color: rgb(15, 53, 177);
+
+}
+
+img
+{
+width: 150px;
+height: auto;
+}
+
+.bid_img
+{
+width: 250px;
+height: auto;
+}
+

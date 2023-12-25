@@ -1,0 +1,67 @@
+html
+{
+color: aliceblue;
+font-family: Tahoma;
+background-color: rgb(56, 56, 56);
+display: inline-block;
+text-align: center;
+
+}
+
+
+
+.number
+
+{
+width: 60px;
+height: 60px;
+border: 5px solid rgb(0, 0, 0);
+border-radius: 5px;
+background-color: rgb(85, 85, 85);
+display:block;
+margin: 1% 45%;
+text-align:center;
+}
+
+.message
+{
+color: rgb(255, 255, 255);
+font-size: 15pt;
+background-color: rgb(121, 121, 121);
+}
+
+.message_winner
+{
+color: rgb(255, 255, 255);
+font-size: 25pt;
+background-color: rgb(255, 0, 0);
+}
+
+.message_error
+{
+color: rgb(255, 0, 0);
+font-size: 25pt;
+background-color: rgb(0, 0, 0);
+}
+
+.message_proba
+{
+    color: rgb(255, 255, 255);
+    font-size: 15pt;
+    background-color: rgb(0, 39, 27);
+    }
+
+
+    .number_winner
+    {
+        width: 80px;
+        height: 80px;
+        border: 5px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        background-color: rgb(0, 160, 53);
+        display:block;
+        margin: 1% 45%;
+        text-align:center;
+        font-size: 45pt;
+
+    }

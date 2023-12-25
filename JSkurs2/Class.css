@@ -1,0 +1,84 @@
+*
+{margin: 0;
+padding: 0;
+box-sizing: inherit;}
+
+html {
+font-size: 62%;
+box-sizing: border-box;
+font-weight: 300;
+font-family: Verdana;
+}
+
+body{
+padding-top: 5rem;
+font-size: 1.6rem;
+}
+
+.container
+{
+
+width: 1140px;
+margin: 0 auto;
+}
+
+.cards
+{
+display: grid;
+grid-template-columns: repeat(5, 20rem);
+gap: 4rem;
+text-align: center;
+}
+
+.btn
+{
+display: block;
+margin: 0 auto;
+text-align: center;
+margin-bottom: 5rem;
+border: none;
+padding: 1rem;
+border-radius: 0.5rem;
+box-shadow: 0.1rem 0.1rem 0.2rem black;
+font-weight: 600;
+}
+
+.card_img
+{width: 100%;
+border-radius: 10px;
+}
+
+.card_sale
+{
+width: 50px;
+height: 25px;
+text-align: center;
+background-color: red;
+border-radius: 0.5rem;
+box-shadow: 0.1rem 0.1rem 0.2rem black;
+margin: 0 auto;
+padding-top: 2%;
+color: aliceblue;
+}
+
+.card_price
+{
+    color: red;
+    font-weight:bold;
+    font-size: 15pt;
+}
+
+.card_old-Price
+{
+    color: rgb(63, 60, 60);
+    font-weight:normal;
+    font-size: 10pt;
+}
+
+.card_type
+{
+    color: rgb(183, 28, 255);
+    font-weight: bold;
+    font-size: 20pt;
+}
+
