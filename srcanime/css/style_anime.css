@@ -74,6 +74,10 @@ html {
     transform: perspective(100rem) rotateY(360deg);
   }
 }
+body {
+  position: relative;
+}
+
 .bodyOne {
   display: flex;
   justify-content: center;
@@ -124,15 +128,19 @@ html {
   height: 100%;
 }
 .sect-bank__button {
-  width: 30rem;
-  height: 40rem;
+  width: 28rem;
+  height: 28rem;
   border-radius: 50%;
   background: rgba(94, 185, 171, 0);
   position: absolute;
-  top: 65%;
+  top: 74%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 21;
+}
+.sect-bank__button img {
+  width: 25rem;
+  height: 25rem;
 }
 .sect-bank__box {
   height: 63rem;
@@ -160,6 +168,7 @@ html {
   z-index: 20;
   background: url(../img/Banka.png) center/cover no-repeat;
   opacity: 0.8;
+  -webkit-box-reflect: below -10px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2666666667));
 }
 .sect-bank__box__toper {
   height: 5rem;
@@ -172,56 +181,130 @@ html {
   backface-visibility: hidden;
   z-index: 21;
 }
-.sect-bank__box__cherry {
+.sect-bank__box__cherry_1 {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
   position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: All 0.7s ease-out;
-  backface-visibility: hidden;
-  z-index: 5;
-  height: 10rem;
-  width: 10rem;
-  border-radius: 50%;
-  position: absolute;
-  top: 45%;
-  left: 50%;
+  top: 58%;
+  left: 74%;
   transform: translate(-50%, -50%);
   transition: All 0.7s ease-out;
   backface-visibility: hidden;
   z-index: 5;
 }
-.sect-bank__box__cherry3 {
+.sect-bank__box__cherry_2 {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
   position: absolute;
-  top: 45%;
+  top: 50%;
+  left: 36%;
+  transform: translate(-50%, -50%);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+  z-index: 5;
+}
+.sect-bank__box__cherry_3 {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
   left: 65%;
   transform: translate(-50%, -50%);
   transition: All 0.7s ease-out;
   backface-visibility: hidden;
   z-index: 5;
 }
-.sect-bank__toggle:checked ~ .sect-bank__box__toper {
-  top: 3%;
-  left: 20%;
-  transform: rotate(50deg);
+.sect-bank__box__cherry_4 {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 88%;
+  left: 29%;
+  transform: translate(-50%, -50%);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+  z-index: 5;
+}
+.sect-bank__box__cherry_5 {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 87%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+  z-index: 5;
+}
+.sect-bank__box__cherry_6 {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 59%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+  z-index: 5;
+}
+.sect-bank__box__logo {
+  position: absolute;
+  width: 50rem;
+  z-index: 23;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   transition: All 0.7s ease-out;
   backface-visibility: hidden;
 }
-.sect-bank__toggle:checked ~ .sect-bank__box__cherry {
-  top: 10%;
-  left: 40%;
+.sect-bank__toggle:checked ~ .sect-bank__box__logo {
+  width: 26rem;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
 }
-.sect-bank__toggle:checked ~ .sect-bank__box__cherry2 {
-  top: 0%;
-  left: -11%;
+.sect-bank__toggle:checked ~ .sect-bank__box__toper {
+  top: 3%;
+  left: 39%;
+  transform: rotate(60deg);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
 }
-.sect-bank__toggle:checked ~ .sect-bank__box__cherry3 {
-  top: 19%;
-  left: -21%;
+.sect-bank__toggle:checked ~ .sect-bank__box__cherry_1 {
+  top: -3%;
+  left: 15%;
+  transform: rotate(270deg);
+}
+.sect-bank__toggle:checked ~ .sect-bank__box__cherry_2 {
+  top: -8%;
+  left: -28%;
+  transform: rotate(270deg);
+}
+.sect-bank__toggle:checked ~ .sect-bank__box__cherry_3 {
+  top: 16%;
+  left: -14%;
+  transform: rotate(270deg);
+}
+.sect-bank__toggle:checked ~ .sect-bank__box__cherry_4 {
+  top: 22%;
+  left: 58%;
+  transform: rotate(270deg);
+}
+.sect-bank__toggle:checked ~ .sect-bank__box__cherry_5 {
+  top: 14%;
+  left: 26%;
+  transform: rotate(270deg);
+}
+.sect-bank__toggle:checked ~ .sect-bank__box__cherry_6 {
+  top: -1%;
+  left: 84%;
+  transform: rotate(270deg);
 }/*# sourceMappingURL=style_anime.css.map */
