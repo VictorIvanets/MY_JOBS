@@ -9,8 +9,7 @@
         transform: perspective(100rem) rotateY(360deg)
 
 
-
-body
+.bodyOne
     display: flex
     justify-content: center
     align-items: center 
@@ -43,3 +42,118 @@ body
             width: 100%
             height: 100%
             object-fit: cover
+
+.sect-bank
+    background: rgb(203, 252, 139)
+    width: 100%
+    height: 100vh
+    position: relative
+    background: url(../img/strawberry_background.jpg) center / cover no-repeat
+
+
+    &__toggle
+        display: none
+        width: 100%
+        height: 100%
+
+    &__button
+        width: 30rem
+        height: 40rem
+        border-radius: 50%
+        background: rgba(94, 185, 171, 0)
+        position: absolute
+        top: 65%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 21
+
+    &__box
+        height: 63rem
+        width: 30rem
+        position: relative
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        transition: All 0.7s ease-out
+        backface-visibility: hidden
+        img
+            width: 100%
+            height: 100%
+
+        &__bank
+            height: 40rem
+            width: 28rem
+            position: relative
+            top: 60%
+            left: 50%
+            transform: translate(-50%, -50%)
+            transition: All 0.7s ease-out
+            backface-visibility: hidden
+            z-index: 20
+            background: url(../img/Banka.png) center / cover no-repeat
+            opacity: 0.8
+        &__toper
+            height: 5rem
+            width: 23rem
+            position: relative
+            top: 38%
+            left: 50%
+            transform: translate(-50%, -50%)
+            transition: All 0.7s ease-out
+            backface-visibility: hidden
+            z-index: 21
+        &__cherry
+            height: 10rem
+            width: 10rem
+            border-radius: 50%
+            position: absolute
+            top: 60%
+            left: 50%
+            transform: translate(-50%, -50%)
+            transition: All 0.7s ease-out
+            backface-visibility: hidden
+            z-index: 5
+            &_2
+            height: 10rem
+            width: 10rem
+            border-radius: 50%
+            position: absolute
+            top: 45%
+            left: 50%
+            transform: translate(-50%, -50%)
+            transition: All 0.7s ease-out
+            backface-visibility: hidden
+            z-index: 5
+
+        &__cherry3
+            height: 10rem
+            width: 10rem
+            border-radius: 50%
+            position: absolute
+            top: 45%
+            left: 65%
+            transform: translate(-50%, -50%)
+            transition: All 0.7s ease-out
+            backface-visibility: hidden
+            z-index: 5
+
+    &__toggle:checked ~ &__box__toper
+        top: 3%
+        left: 20%
+        transform: rotate(50deg)
+        transition: All 0.7s ease-out
+        backface-visibility: hidden
+    &__toggle:checked ~ &__box__cherry
+        top: 10%
+        left: 40%
+    &__toggle:checked ~ &__box__cherry2
+        top: 0%
+        left: -11%
+    &__toggle:checked ~ &__box__cherry3
+        top: 19%
+        left: -21%
+
+
+                
+
+
