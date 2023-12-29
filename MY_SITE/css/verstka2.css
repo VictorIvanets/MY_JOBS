@@ -535,12 +535,12 @@ h2 {
   transform: translateX(1rem);
 }
 .navigator__toggle:checked ~ .navigator__background {
-  scale: 5000%;
+  scale: 1000%;
   transition: All 0.7s ease-out;
   backface-visibility: hidden;
 }
 .navigator__toggle:checked ~ .navigator__nav {
-  opacity: 1;
+  opacity: 0.3;
   width: 100%;
   transition: All 0.7s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   backface-visibility: hidden;
