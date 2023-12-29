@@ -120,7 +120,17 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url(../img/strawberry_background.jpg) center/cover no-repeat;
+  background: url(../img/strawberry_background_1440.jpg) center/cover no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px) {
+  .sect-bank {
+    background: url(../img/strawberry_background.jpg) center/cover no-repeat;
+  }
+}
+@media (max-width: 700px) {
+  .sect-bank {
+    background: url(../img/strawberry_background_500.jpg) center/cover no-repeat;
+  }
 }
 .sect-bank__toggle {
   display: none;
