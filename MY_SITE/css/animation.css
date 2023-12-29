@@ -102,6 +102,7 @@
   backface-visibility: hidden;
   opacity: 0;
   width: 0;
+  scale: 1%;
 }
 .navigator__list {
   position: absolute;
@@ -142,6 +143,7 @@
   width: 100%;
   transition: All 0.7s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   backface-visibility: hidden;
+  scale: 100%;
 }
 .navigator__icon {
   width: 100%;
