@@ -13,5 +13,24 @@
   transform: translate(-50%, -50%);
 }
 .testimg__imgbox img {
-  width: 50rem;
+  width: 10rem;
+  animation: bounce 1s infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-20px);
+    opacity: 0.7;
+  }
+  60% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-5px);
+    opacity: 0.7;
+  }
 }/*# sourceMappingURL=stule_test_img.css.map */

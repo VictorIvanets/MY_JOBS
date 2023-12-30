@@ -127,7 +127,7 @@ body {
     background: url(../img/strawberry_background.jpg) center/cover no-repeat;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 720px) {
   .sect-bank {
     background: url(../img/strawberry_background_500.jpg) center/cover no-repeat;
   }
