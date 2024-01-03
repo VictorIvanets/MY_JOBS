@@ -28,6 +28,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Penta";
+  src: url("../fonts/PentaNormal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 *, ::after, ::before {
   box-sizing: border-box;
 }

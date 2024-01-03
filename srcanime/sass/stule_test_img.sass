@@ -1,5 +1,7 @@
 @import "utilites.sass"
-$time: 7s
+@import "animation.sass"
+
+
 
 .testimg
     width: 100%
@@ -8,7 +10,8 @@ $time: 7s
     &__imgbox
         width: 100%
         height: 100%
-        background: #a7e2fd
+        background: $img-1 
+        scale: 110%
         position: relative
         top: 50%
         left: 50%
@@ -18,138 +21,11 @@ $time: 7s
         &__img
             width: 100%
             height: 100%
-            background: url(../img/seson_10.jpg) center / cover no-repeat
+            background: $img-8
             filter: grayscale(0%)
             scale: 110%
             backface-visibility: hidden
-            animation: bounce $time 
-            @keyframes bounce 
-                0%
-                    background: url(../img/seson_8.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 110%
-                    filter: grayscale(0%)
-                1%
-                    background: url(../img/seson_1.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 100%
-                    filter: grayscale(0%)
-                1%
-                    background: url(../img/seson_1.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 100%
-                    filter: grayscale(100%)
-                    
-                12%
-                    background: url(../img/seson_1.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 110%
-                    filter: grayscale(0%)
-                13%
-                    background: url(../img/seson_2.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 100%
-                    filter: grayscale(0%)
-                13%
-                    background: url(../img/seson_2.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 100%
-                    filter: grayscale(100%)
-                25%
-                    background: url(../img/seson_2.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 110%
-                    filter: grayscale(0%)
-                26%
-                    background: url(../img/seson_3.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 100%
-                    filter: grayscale(0%)
-                26%
-                    background: url(../img/seson_3.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 100%
-                    filter: grayscale(100%)
-                37%
-                    background: url(../img/seson_3.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 110%
-                    filter: grayscale(0%)
-                38%
-                    background: url(../img/seson_4.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 100%
-                    filter: grayscale(0%)
-                38%
-                    background: url(../img/seson_4.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 100%
-                    filter: grayscale(100%)
-                50%
-                    background: url(../img/seson_4.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 110%
-                    filter: grayscale(0%)
-                51%
-                    background: url(../img/seson_5.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 100%
-                    filter: grayscale(0%)
-                51%
-                    background: url(../img/seson_5.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 100%
-                    filter: grayscale(100%)
-                62%
-                    background: url(../img/seson_5.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 110%
-                    filter: grayscale(0%)
-                63%
-                    background: url(../img/seson_6.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 100%
-                    filter: grayscale(0%)
-                63%
-                    background: url(../img/seson_6.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 100%
-                    filter: grayscale(100%)
-                75%
-                    background: url(../img/seson_6.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 110%
-                    filter: grayscale(0%)
-                76%
-                    background: url(../img/seson_7.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 100%
-                    filter: grayscale(0%)
-                76%
-                    background: url(../img/seson_7.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 100%
-                    filter: grayscale(100%)
-                87%
-                    background: url(../img/seson_7.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 110%
-                    filter: grayscale(0%)
-                88%
-                    background: url(../img/seson_10.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 100%
-                    filter: grayscale(0%)
-                88%
-                    background: url(../img/seson_10.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 100%
-                    filter: grayscale(100%)
-                100%
-                    background: url(../img/seson_10.jpg) center / cover no-repeat
-                    opacity: 1
-                    scale: 110%
-                    filter: grayscale(0%)
+            animation: image-anime $time          
 
     &__contbox
         width: 100%
@@ -159,31 +35,62 @@ $time: 7s
         left: 50%
         transform: translate(-50%, -50%)
         overflow: hidden
-        opacity: 100
-        backface-visibility: hidden
-        animation: bouncetext $time 
-        @keyframes bouncetext 
-            0%
-                opacity: 0
-            80%
-                opacity: 0
-            85%
-                opacity: 0.8
-            100%
-                opacity: 1
+        opacity: 1
+        scale: 100%
+
         
         h1
+            width: 100%
             margin: 0
             text-align: center
-            font-family: "Comfortaa-Medium"
+            font-family: "Penta"
             color: white
             font-size: 8rem
-            position: absolute
+            position: relative
             top: 50%
             left: 50%
+            cursor: pointer
             transform: translate(-50%, -50%)
             text-shadow: .3rem .3rem .3rem rgb(20, 20, 20)
-
+            backface-visibility: hidden
+            animation: bouncetext $time 
+            @keyframes bouncetext 
+                0%
+                    opacity: 0
+                    font-size: 14rem
+                85%
+                    opacity: 0
+                    font-size: 14rem
+                100%
+                    opacity: 1
+                    font-size: 8rem
+.box
+    width: 100%
+    height: 100vh
+    position: absolute
+    &__contbox
+        width: 50%
+        height: 40%
+        border-radius: 1rem
+        border: 2px solid white
+        backdrop-filter: blur(5px)
+        position: relative
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        overflow: hidden
+        opacity: 1
+        scale: 100%
+        backface-visibility: hidden
+        animation: blurfon $time 
+        @keyframes blurfon 
+            0%
+                opacity: 0
+            85%
+                opacity: 0
+            100%
+                opacity: 1
+                backdrop-filter: blur(5px)
 
 
 
