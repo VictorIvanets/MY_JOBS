@@ -1,0 +1,331 @@
+.sect-bank
+    width: 100%
+    height: 100vh
+    position: absolute
+    top: 0
+    left: 0
+    scale: 100%
+    animation: sectoranime $time 
+    @keyframes sectoranime 
+        0%
+            position: absolute
+            top: -500rem
+            left: 0
+            scale: 10%
+        40%
+            position: absolute
+            top: -500rem
+            left: 0
+            scale: 10%
+        60%
+            position: absolute
+            top: 0
+            left: 0
+            scale: 100%
+
+
+    &__toggle
+        display: none
+        width: 100%
+        height: 100%
+
+    &__button
+        width: 28rem
+        height: 28rem
+        border-radius: 50%
+        background: rgba(94, 185, 171, 0)
+        position: absolute
+        top: 74%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 21
+        
+        img
+            width: 25rem
+            height: 25rem
+
+    &__box
+        height: 63rem
+        width: 30rem
+        position: relative
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        transition: All 0.7s ease-out
+        backface-visibility: hidden
+        img
+            width: 100%
+            height: 100%
+
+        &__bank
+            height: 40rem
+            width: 28rem
+            position: relative
+            top: 60%
+            left: 50%
+            transform: translate(-50%, -50%)
+            transition: All 0.7s ease-out
+            backface-visibility: hidden
+            z-index: 20
+            background: url(../img/Banka.png) center / cover no-repeat
+            opacity: 0.8
+            -webkit-box-reflect: below -10px linear-gradient(transparent, transparent, #0004)
+
+        &__toper
+            height: 5rem
+            width: 23rem
+            position: relative
+            top: 3%
+            left: 39%
+            transform: rotate(60deg)
+            transition: All 0.7s ease-out
+            backface-visibility: hidden
+            z-index: 21
+            backface-visibility: hidden
+            animation: toperanime $time 
+            @keyframes toperanime 
+                0%
+                    top: 38%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    transition: All 0.7s ease-out
+                60%
+                    top: 38%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    transition: All 0.7s ease-out
+                80%
+                    top: 3%
+                    left: 39%
+                    transform: rotate(60deg)
+                    transition: All 0.7s ease-out
+
+
+        &__cherry_1
+            height: 10rem
+            width: 10rem
+            border-radius: 50%
+            position: absolute
+            top: -3%
+            left: 15%
+            transform: rotate(270deg)
+            transition: All 0.7s ease-out
+            backface-visibility: hidden
+            z-index: 5
+            animation: cherry_1 $time 
+            @keyframes cherry_1 
+                0%
+                    top: 58%
+                    left: 74%
+                    transform: translate(-50%, -50%)
+                    transition: All 0.7s ease-out
+                60%
+                    top: 58%
+                    left: 74%
+                    transform: translate(-50%, -50%)
+                    transition: All 0.7s ease-out
+                80%
+                    top: -3%
+                    left: 15%
+                    transform: rotate(270deg)
+                    transition: All 0.7s ease-out
+            
+        &__cherry_2
+            height: 10rem
+            width: 10rem
+            border-radius: 50%
+            position: absolute
+            top: -8%
+            left: -28%
+            transform: rotate(270deg)
+            transition: All 0.7s ease-out
+            backface-visibility: hidden
+            z-index: 5
+            animation: cherry_2 $time 
+            @keyframes cherry_2 
+                0%
+                    top: 50%
+                    left: 36%
+                    transform: translate(-50%, -50%)
+                    transition: All 0.7s ease-out
+                60%
+                    top: 50%
+                    left: 36%
+                    transform: translate(-50%, -50%)
+                    transition: All 0.7s ease-out
+                80%
+                    top: -8%
+                    left: -28%
+                    transform: rotate(270deg)
+                    transition: All 0.7s ease-out
+        &__cherry_3
+            height: 10rem
+            width: 10rem
+            border-radius: 50%
+            position: absolute
+            top: 16%
+            left: -14%
+            transform: rotate(270deg)
+            transition: All 0.7s ease-out
+            backface-visibility: hidden
+            z-index: 5
+            animation: cherry_3 $time 
+            @keyframes cherry_3 
+                0%
+                    top: 50%
+                    left: 65%
+                    transform: translate(-50%, -50%)
+                    transition: All 0.7s ease-out
+                60%
+                    top: 50%
+                    left: 65%
+                    transform: translate(-50%, -50%)
+                    transition: All 0.7s ease-out
+                80%
+                    top: 16%
+                    left: -14%
+                    transform: rotate(270deg)
+                    transition: All 0.7s ease-out
+        &__cherry_4
+            height: 10rem
+            width: 10rem
+            border-radius: 50%
+            position: absolute
+            top: 22%
+            left: 58%
+            transform: rotate(270deg)
+            transition: All 0.7s ease-out
+            backface-visibility: hidden
+            z-index: 5
+            animation: cherry_4 $time 
+            @keyframes cherry_4 
+                0%
+                    top: 88%
+                    left: 29%
+                    transform: translate(-50%, -50%)
+                    transition: All 0.7s ease-out
+                60%
+                    top: 88%
+                    left: 29%
+                    transform: translate(-50%, -50%)
+                    transition: All 0.7s ease-out
+                80%
+                    top: 22%
+                    left: 58%
+                    transform: rotate(270deg)
+                    transition: All 0.7s ease-out
+            
+        &__cherry_5
+            height: 10rem
+            width: 10rem
+            border-radius: 50%
+            position: absolute
+            top: 14%
+            left: 26%
+            transform: rotate(270deg)
+            transition: All 0.7s ease-out
+            backface-visibility: hidden
+            z-index: 5
+            animation: cherry_5 $time 
+            @keyframes cherry_5 
+                0%
+                    top: 87%
+                    left: 73%
+                    transform: translate(-50%, -50%)
+                    transition: All 0.7s ease-out
+                60%
+                    top: 87%
+                    left: 73%
+                    transform: translate(-50%, -50%)
+                    transition: All 0.7s ease-out
+                80%
+                    top: 14%
+                    left: 26%
+                    transform: rotate(270deg)
+                    transition: All 0.7s ease-out
+        &__cherry_6
+            height: 10rem
+            width: 10rem
+            border-radius: 50%
+            position: absolute
+            top: -1%
+            left: 84%
+            transform: rotate(270deg)
+            transition: All 0.7s ease-out
+            backface-visibility: hidden
+            z-index: 5
+            animation: cherry_6 $time 
+            @keyframes cherry_6 
+                0%
+                    top: 59%
+                    left: 26%
+                    transform: translate(-50%, -50%)
+                    transition: All 0.7s ease-out
+                60%
+                    top: 59%
+                    left: 26%
+                    transform: translate(-50%, -50%)
+                    transition: All 0.7s ease-out
+                80%
+                    top: -1%
+                    left: 84%
+                    transform: rotate(270deg)
+                    transition: All 0.7s ease-out
+        &__logo
+            position: absolute
+            width: 50rem
+            z-index: 23
+            top: 15%
+            left: 50%
+            transform: translate(-50%, -50%)
+            transition: All 0.7s ease-out
+            backface-visibility: hidden
+
+
+    &__toggle:checked ~ &__box__logo
+        width: 26rem
+        top: 52%
+        left: 50%
+        transform: translate(-50%, -50%) 
+        transition: All 0.7s ease-out
+        backface-visibility: hidden
+
+
+
+
+
+
+    &__toggle:checked ~ &__box__toper
+        top: 3%
+        left: 39%
+        transform: rotate(60deg)
+        transition: All 0.7s ease-out
+        backface-visibility: hidden
+
+    &__toggle:checked ~ &__box__cherry_1
+        top: -3%
+        left: 15%
+        transform: rotate(270deg)
+    &__toggle:checked ~ &__box__cherry_2
+        top: -8%
+        left: -28%
+        transform: rotate(270deg)
+    &__toggle:checked ~ &__box__cherry_3
+        top: 16%
+        left: -14%
+        transform: rotate(270deg)
+    &__toggle:checked ~ &__box__cherry_4
+        top: 22%
+        left: 58%
+        transform: rotate(270deg)
+    &__toggle:checked ~ &__box__cherry_5
+        top: 14%
+        left: 26%
+        transform: rotate(270deg)
+    &__toggle:checked ~ &__box__cherry_6
+        top: -1%
+        left: 84%
+        transform: rotate(270deg)
+   
+
+    
