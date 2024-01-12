@@ -1,0 +1,78 @@
+@font-face 
+    font-family: "Comfortaa-Light"
+    src: url("../fonts/Comfortaa-Light.ttf") format("truetype")
+    font-weight: normal
+    font-style: normal
+@font-face 
+    font-family: "Comfortaa-Medium"
+    src: url("../fonts/Comfortaa-Medium.ttf") format("truetype")
+    font-weight: normal
+    font-style: normal
+html
+    font-size: 62.5%
+
+$color1: rgb(0, 35, 40)
+$color2: rgb(0, 70, 70)
+$color3: rgb(0, 205, 163)
+$color4: rgb(0, 140, 130)
+// $color-blue-grad: linear-gradient(30deg, rgba(255,255,255,0.1) 10%, rgba($color-lblue, 0.1) 40%, rgba($color-dblue, 1) 99%)
+// $color-brown-grad: linear-gradient(30deg, rgba(255,255,255,0.1) 10%, rgba($color-lbrown, 0.1) 40%, rgba($color-dbrown, 1) 99%)
+$shadow1: 0rem .4rem .4rem rgba(20, 20, 20, 0.295)
+$shadow2: .6rem .6rem .6rem rgba(0, 0, 0, 0.5)
+
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body  
+    background: rgb(6, 8, 5)
+    font-family: "Comfortaa-Medium" 
+    color: $color3
+
+.title-1
+    font-family: "Comfortaa-Medium"
+    font-size: 4rem
+    color: white
+.title-2
+    font-family: "Comfortaa-Medium"
+    font-size: 3rem
+    color: white
+.title-3
+    font-family: "Comfortaa-Light"
+    font-size: 3rem
+    color: white
+.title-4
+    font-family: "Comfortaa-Light"
+    font-size: 2rem
+    color: black
+    text-align: right
+    margin-bottom: 1rem
+    justify-self: center
+p
+    color: $color2
+    font-size: 1.5rem
+    text-align: justify
+.white
+    color: white
+.btn
+    padding: 1rem
+    margin: 1rem 0rem
+    text-align: center
+    color: $color2
+    font-family: "Comfortaa-Medium"
+    border: none
+    border-radius: 5px
+    &:hover
+        color: $color3
+    &:active
+        background: $color3
+        color: white
+        
+.color3
+    color: $color3
+
+.margitop
+    margin-top: 20rem
+.fontbig
+    font-size: 5.5rem
