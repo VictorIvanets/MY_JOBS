@@ -3,7 +3,7 @@
 .container
 
     display: grid
-    grid-template-rows: 80vh min-content minmax(80vh, min-content) repeat(3, max-content)
+    grid-template-rows: 100vh min-content minmax(80vh, min-content) repeat(3, max-content)
     grid-template-columns: [sidebar-start] 6rem [sidebar-end full-start] minmax(2rem, 1fr) [centr-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end] ) [centr-end] minmax(2rem, 1fr) [full-end]
 
     & > *
@@ -12,19 +12,109 @@
         color: red
 
 .sidebar
-    background: $color2
+    background: black
     grid-column: sidebar-start / sidebar-end
     grid-row: 1 / -1
+    padding: 1rem
+    &__box
+        position: fixed
+        height: 100vh
+        display: flex
+        flex-direction: column
+        align-content: center
+        justify-content: space-evenly
+        padding-bottom: 1rem
+        &__btn
+            width: 4rem
+            height: 10%
+            background: rgb(0, 27, 34)
+            margin-bottom: 0.2rem
+            border-radius: 2px
+            cursor: pointer
+            transition: All 0.1s
+            backface-visibility: hidden
+            &:last-child
+                margin-bottom: 1rem
+                
 
+            &:hover
+                background: rgb(1, 49, 61)
+                transition: All 0.1s
+                backface-visibility: hidden
+
+            &:active
+                background: $color2
+                transition: All 0.1s
+                scale: 95%
+                border: 1px solid rgb(0, 55, 70)
+                backface-visibility: hidden
+
+
+.headcontainer
+    padding: 0
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr))
+    grid-column: full-start / full-end
+    overflow: hidden
 
 .header
     background: url(../img/gridtestBid_3.jpg) center / cover no-repeat
-    grid-column: full-start / col-end 6
-
-
-.gamers
+    // grid-column: full-start / col-end 6
+    grid-column: 1 / 3
+    padding: 5%
+    display: flex
+    flex-direction: column
+    justify-content: end
+    align-items: flex-end
+    &__textbox
+        text-align: right
+.headerleft
     background: $color2
-    grid-column: col-start 7 / full-end
+    position: relative
+    &__test
+        position: relative
+        width: 30rem
+        height: 30rem
+        transform: rotate()
+        &-1
+            position: absolute
+            width: 16rem
+            top: 50%
+            left: 50%
+        &-2
+            position: absolute
+            width: 16rem
+            top: 50%
+            left: 50%
+        &-3       
+            position: absolute
+            width: 17rem
+            top: 50%
+            left: 50%
+        &-4
+            width: 20rem
+            position: absolute           
+            top: 50%
+            left: 50%
+        &-5
+            top: 50%
+            left: 50%
+            width: 7rem
+            position: absolute
+        &:hover
+            
+        
+
+    
+
+
+
+
+
+            
+            
+
+    // grid-column: col-start 7 / full-end
 
 
 .features
@@ -70,12 +160,27 @@
             grid-column: 2/14
             grid-row: 3/9
             transform: rotate(180deg)
+            transition: All 0.2s
+            box-shadow: $shadow2
+            &:hover
+                z-index: 3
+                scale: 110%
+                transition: All 0.2s
+                border-radius: 0rem 7rem 0rem 7rem
+
         &__img2
             width: 100%
             grid-column: 4/16
             grid-row: 6/13
             z-index: 2
+            transition: All 0.2s
+            box-shadow: $shadow2
 
+            &:hover
+                z-index: 3
+                scale: 110%
+                transition: All 0.2s
+                border-radius: 0rem 7rem 0rem 7rem
 
 
     &-text  
@@ -120,21 +225,27 @@
         grid-row: 5/6
         text-align: center 
         justify-self: center
-        padding: 1.6rem
+        padding: 1.7rem
         width: 100%
+        transition: All 0.2s
+        backface-visibility: hidden
         &:hover
             background: #1d1d1d
             color: $color4
+            transition: All 0.1s
+            backface-visibility: hidden
         &:active
             background: rgb(0, 0, 0)
             color: #ffffff
             scale: 95%
+            transition: All 0.1s
+            backface-visibility: hidden
     &__price
         color: $color4
         grid-column: 2/4
         grid-row: 6/7
         font-size: 2rem
-        justify-self: center
+        justify-self: start
         align-self: center
 
     &__location
@@ -142,7 +253,7 @@
         grid-column: 5/7
         grid-row: 6/7
         font-size: 2rem
-        justify-self: center
+        justify-self: start
         align-self: center
 
     &__checkout
@@ -155,13 +266,17 @@
         justify-self: center
         padding: 1.6rem
         width: 100%
+        transition: All 0.2s
+        backface-visibility: hidden
         &:hover
             background: #1d1d1d
             color: $color4
+            transition: All 0.1s
         &:active
             background: rgb(0, 0, 0)
             color: #ffffff
             scale: 98%
+            transition: All 0.1s
             
     &__icon
         width: 3rem
@@ -176,10 +291,98 @@
 
 
 .galery
-    background: $color2
+    background: url(../img/galer_10.jpg) center / cover no-repeat
     grid-column: full-start / full-end
+    display: grid
+    grid-template-columns: repeat(8, 1fr)
+    grid-template-rows: repeat(7, 7vw)
+    grid-gap: 1rem
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__item
+        transition: All 0.2s
+        &-1
+            grid-column: 1/4
+            grid-row: 1/4
+        &-2
+            grid-column: 3/7
+            grid-row: 2/6
+
+        &-3
+            grid-column: 5/9
+            grid-row: 5/8
+            z-index: 2
+        &-4
+            grid-column: 1/3
+            grid-row: 3/8
+        &-5
+            grid-column: 6/9
+            grid-row: 1/5
+        &-6
+            grid-column: 7/9
+            grid-row: 4/6
+            z-index: 3
+        &-7
+            grid-column: 3/5
+            grid-row: 4/8
+        &-8
+            grid-column: 4/6
+            grid-row: 1/3
+        &:hover
+            z-index: 10
+            scale: 105%
+            transition: All 0.2s
+
+    
+
+
+
+
+
+
+
+
 
 
 .footer
     background: rgb(24, 24, 24)
     grid-column: full-start / full-end
+    padding: 3%
+    
+    &__linkbox
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr))
+        grid-gap: 2rem
+        justify-items: center
+        align-items: center
+        a
+            text-decoration: none
+            color: white
+            display: inline-block
+            &:hover
+                color: rgb(190, 190, 190)
+            &:active
+                color: rgb(52, 184, 151)
+                scale: 105%
+
+
+                
+        &__link
+            
+            &-1
+            &-2
+            &-3
+            &-4
+            &-5
+            &-6
+    &__icon
+
+    &__textbox
+        display: flex
+        justify-content: center
+        align-content: center   
+        margin-bottom: 2rem
+
+
