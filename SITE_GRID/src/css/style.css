@@ -92,6 +92,158 @@ p {
   font-size: 5.5rem;
 }
 
+@keyframes image-anime {
+  0% {
+    background: url(../img/gridtestBid_5.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+  1% {
+    background: url(../img/gridtestSmall_1.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+  }
+  1% {
+    background: url(../img/gridtestSmall_1.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+  }
+  12% {
+    background: url(../img/gridtestSmall_1.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+  13% {
+    background: url(../img/gridtestSmall_2.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+  }
+  13% {
+    background: url(../img/gridtestSmall_2.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+  }
+  25% {
+    background: url(../img/gridtestSmall_2.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+  26% {
+    background: url(../img/gridtestSmall_3.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+  }
+  26% {
+    background: url(../img/gridtestSmall_3.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+  }
+  37% {
+    background: url(../img/gridtestSmall_3.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+  38% {
+    background: url(../img/gridtestSmall_4.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+  }
+  38% {
+    background: url(../img/gridtestSmall_4.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+  }
+  50% {
+    background: url(../img/gridtestSmall_4.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+  51% {
+    background: url(../img/gridtestSmall_5.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+  }
+  51% {
+    background: url(../img/gridtestSmall_5.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+  }
+  62% {
+    background: url(../img/gridtestSmall_5.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+  63% {
+    background: url(../img/gridtestSmall_6.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+  }
+  63% {
+    background: url(../img/gridtestSmall_6.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+  }
+  75% {
+    background: url(../img/gridtestSmall_6.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+  76% {
+    background: url(../img/gridtestSmall_7.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+  }
+  76% {
+    background: url(../img/gridtestSmall_7.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+  }
+  87% {
+    background: url(../img/gridtestSmall_7.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+  88% {
+    background: url(../img/gridtestBid_5.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+  }
+  88% {
+    background: url(../img/gridtestBid_5.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+  }
+  100% {
+    background: url(../img/gridtestBid_5.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+}
 .container {
   display: grid;
   grid-template-rows: 100vh min-content minmax(80vh, min-content) repeat(3, max-content);
@@ -153,13 +305,26 @@ p {
 }
 
 .header {
-  background: #000;
+  position: relative;
   grid-column: 1/3;
   padding: 5%;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: flex-end;
+}
+.header__fon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url(../img/gridtestBid_5.jpg) center/cover no-repeat;
+  filter: grayscale(0%);
+  scale: 110%;
+  backface-visibility: hidden;
+  animation: image-anime 7s;
 }
 .header__textbox {
   text-align: right;
@@ -170,6 +335,10 @@ p {
   position: relative;
 }
 
+.logoivn-hidden {
+  display: none;
+}
+
 .logoivn {
   position: absolute;
   top: 7%;
@@ -177,11 +346,11 @@ p {
 }
 .logoivn__test {
   position: relative;
-  scale: 120%;
+  scale: 150%;
   width: 45rem;
   height: 30rem;
   backface-visibility: hidden;
-  animation: logofon 2.5s infinite;
+  animation: logofon 2.5s;
 }
 @keyframes logofon {
   0% {
@@ -197,7 +366,7 @@ p {
   top: 37%;
   left: 27%;
   backface-visibility: hidden;
-  animation: logotop 2.5s infinite;
+  animation: logotop 2.5s;
 }
 @keyframes logotop {
   0% {
@@ -214,7 +383,7 @@ p {
   top: 62%;
   left: 19%;
   backface-visibility: hidden;
-  animation: logobut 2.5s infinite;
+  animation: logobut 2.5s;
 }
 @keyframes logobut {
   0% {
@@ -230,7 +399,7 @@ p {
   width: 17rem;
   top: 38%;
   left: 9%;
-  animation: logotxt1 2.5s infinite;
+  animation: logotxt1 2.5s;
 }
 @keyframes logotxt1 {
   0% {
@@ -245,7 +414,7 @@ p {
   position: absolute;
   top: 30%;
   left: 46%;
-  animation: logotxt2 2.5s infinite;
+  animation: logotxt2 2.5s;
 }
 @keyframes logotxt2 {
   0% {
@@ -260,7 +429,7 @@ p {
   left: 74%;
   width: 7rem;
   position: absolute;
-  animation: logotxt2 2.5s infinite;
+  animation: logotxt2 2.5s;
 }
 @keyframes logotxt2 {
   0% {
@@ -268,6 +437,17 @@ p {
     scale: 250%;
     top: 140%;
     left: 150%;
+  }
+}
+@media (max-width: 700px) {
+  .logoivn__test {
+    scale: 90%;
+  }
+}
+@media (max-width: 700px) {
+  .logoivn {
+    left: 0%;
+    top: 0%;
   }
 }
 
@@ -509,13 +689,14 @@ p {
 .footer__linkbox {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 2rem;
+  grid-gap: 0.1rem;
   justify-items: center;
   align-items: center;
 }
 .footer__linkbox a {
   text-decoration: none;
   color: white;
+  font-size: 1.5rem;
   display: inline-block;
 }
 .footer__linkbox a:hover {
