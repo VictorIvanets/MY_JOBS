@@ -1,0 +1,699 @@
+@font-face {
+  font-family: "helv";
+  src: url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "helvT";
+  src: url("../fonts/HelveticaNeueCyr-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvet Bold";
+  src: url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Comfortaa-Light";
+  src: url("../fonts/Comfortaa-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Comfortaa-Medium";
+  src: url("../fonts/Comfortaa-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Penta";
+  src: url("../fonts/PentaNormal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (max-width: 1100px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 41%;
+  }
+}
+@keyframes image-anime {
+  0% {
+    background: url(../img/seson_10.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+  1% {
+    background: url(../img/seson_1.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+  }
+  1% {
+    background: url(../img/seson_1.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+  }
+  12% {
+    background: url(../img/seson_1.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+  13% {
+    background: url(../img/seson_2.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+  }
+  13% {
+    background: url(../img/seson_2.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+  }
+  25% {
+    background: url(../img/seson_2.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+  26% {
+    background: url(../img/seson_3.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+  }
+  26% {
+    background: url(../img/seson_3.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+  }
+  37% {
+    background: url(../img/seson_3.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+  38% {
+    background: url(../img/seson_4.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+  }
+  38% {
+    background: url(../img/seson_4.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+  }
+  50% {
+    background: url(../img/seson_4.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+  51% {
+    background: url(../img/seson_5.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+  }
+  51% {
+    background: url(../img/seson_5.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+  }
+  62% {
+    background: url(../img/seson_5.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+  63% {
+    background: url(../img/seson_6.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+  }
+  63% {
+    background: url(../img/seson_6.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+  }
+  75% {
+    background: url(../img/seson_6.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+  76% {
+    background: url(../img/seson_7.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+  }
+  76% {
+    background: url(../img/seson_7.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+  }
+  87% {
+    background: url(../img/seson_7.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+  88% {
+    background: url(../img/seson_10.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+  }
+  88% {
+    background: url(../img/seson_10.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+  }
+  100% {
+    background: url(../img/seson_10.jpg) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+  }
+}
+.sect-bank {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  scale: 100%;
+  animation: sectoranime 7s;
+}
+@keyframes sectoranime {
+  0% {
+    position: absolute;
+    top: -500rem;
+    left: 0;
+    scale: 10%;
+  }
+  40% {
+    position: absolute;
+    top: -500rem;
+    left: 0;
+    scale: 10%;
+  }
+  60% {
+    position: absolute;
+    top: 0;
+    left: 0;
+    scale: 100%;
+  }
+}
+.sect-bank__toggle {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.sect-bank__button {
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%;
+  background: rgba(94, 185, 171, 0);
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 21;
+}
+.sect-bank__button img {
+  width: 25rem;
+  height: 25rem;
+}
+.sect-bank__box {
+  height: 63rem;
+  width: 30rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+}
+.sect-bank__box img {
+  width: 100%;
+  height: 100%;
+}
+.sect-bank__box__bank {
+  height: 40rem;
+  width: 28rem;
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+  z-index: 20;
+  background: url(../img/Banka.png) center/cover no-repeat;
+  opacity: 0.8;
+  -webkit-box-reflect: below -10px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2666666667));
+}
+.sect-bank__box__toper {
+  height: 5rem;
+  width: 23rem;
+  position: relative;
+  top: 3%;
+  left: 39%;
+  transform: rotate(60deg);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+  z-index: 21;
+  backface-visibility: hidden;
+  animation: toperanime 7s;
+}
+@keyframes toperanime {
+  0% {
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: All 0.7s ease-out;
+  }
+  60% {
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: All 0.7s ease-out;
+  }
+  80% {
+    top: 3%;
+    left: 39%;
+    transform: rotate(60deg);
+    transition: All 0.7s ease-out;
+  }
+}
+.sect-bank__box__cherry_1 {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -3%;
+  left: 15%;
+  transform: rotate(270deg);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+  z-index: 5;
+  animation: cherry_1 7s;
+}
+@keyframes cherry_1 {
+  0% {
+    top: 58%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    transition: All 0.7s ease-out;
+  }
+  60% {
+    top: 58%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    transition: All 0.7s ease-out;
+  }
+  80% {
+    top: -3%;
+    left: 15%;
+    transform: rotate(270deg);
+    transition: All 0.7s ease-out;
+  }
+}
+.sect-bank__box__cherry_2 {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -8%;
+  left: -28%;
+  transform: rotate(270deg);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+  z-index: 5;
+  animation: cherry_2 7s;
+}
+@keyframes cherry_2 {
+  0% {
+    top: 50%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    transition: All 0.7s ease-out;
+  }
+  60% {
+    top: 50%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    transition: All 0.7s ease-out;
+  }
+  80% {
+    top: -8%;
+    left: -28%;
+    transform: rotate(270deg);
+    transition: All 0.7s ease-out;
+  }
+}
+.sect-bank__box__cherry_3 {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 16%;
+  left: -14%;
+  transform: rotate(270deg);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+  z-index: 5;
+  animation: cherry_3 7s;
+}
+@keyframes cherry_3 {
+  0% {
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    transition: All 0.7s ease-out;
+  }
+  60% {
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    transition: All 0.7s ease-out;
+  }
+  80% {
+    top: 16%;
+    left: -14%;
+    transform: rotate(270deg);
+    transition: All 0.7s ease-out;
+  }
+}
+.sect-bank__box__cherry_4 {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 22%;
+  left: 58%;
+  transform: rotate(270deg);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+  z-index: 5;
+  animation: cherry_4 7s;
+}
+@keyframes cherry_4 {
+  0% {
+    top: 88%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    transition: All 0.7s ease-out;
+  }
+  60% {
+    top: 88%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    transition: All 0.7s ease-out;
+  }
+  80% {
+    top: 22%;
+    left: 58%;
+    transform: rotate(270deg);
+    transition: All 0.7s ease-out;
+  }
+}
+.sect-bank__box__cherry_5 {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 14%;
+  left: 26%;
+  transform: rotate(270deg);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+  z-index: 5;
+  animation: cherry_5 7s;
+}
+@keyframes cherry_5 {
+  0% {
+    top: 87%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    transition: All 0.7s ease-out;
+  }
+  60% {
+    top: 87%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    transition: All 0.7s ease-out;
+  }
+  80% {
+    top: 14%;
+    left: 26%;
+    transform: rotate(270deg);
+    transition: All 0.7s ease-out;
+  }
+}
+.sect-bank__box__cherry_6 {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -1%;
+  left: 84%;
+  transform: rotate(270deg);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+  z-index: 5;
+  animation: cherry_6 7s;
+}
+@keyframes cherry_6 {
+  0% {
+    top: 59%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+    transition: All 0.7s ease-out;
+  }
+  60% {
+    top: 59%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+    transition: All 0.7s ease-out;
+  }
+  80% {
+    top: -1%;
+    left: 84%;
+    transform: rotate(270deg);
+    transition: All 0.7s ease-out;
+  }
+}
+.sect-bank__box__logo {
+  position: absolute;
+  width: 50rem;
+  z-index: 23;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+}
+.sect-bank__toggle:checked ~ .sect-bank__box__logo {
+  width: 26rem;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+}
+.sect-bank__toggle:checked ~ .sect-bank__box__toper {
+  top: 3%;
+  left: 39%;
+  transform: rotate(60deg);
+  transition: All 0.7s ease-out;
+  backface-visibility: hidden;
+}
+.sect-bank__toggle:checked ~ .sect-bank__box__cherry_1 {
+  top: -3%;
+  left: 15%;
+  transform: rotate(270deg);
+}
+.sect-bank__toggle:checked ~ .sect-bank__box__cherry_2 {
+  top: -8%;
+  left: -28%;
+  transform: rotate(270deg);
+}
+.sect-bank__toggle:checked ~ .sect-bank__box__cherry_3 {
+  top: 16%;
+  left: -14%;
+  transform: rotate(270deg);
+}
+.sect-bank__toggle:checked ~ .sect-bank__box__cherry_4 {
+  top: 22%;
+  left: 58%;
+  transform: rotate(270deg);
+}
+.sect-bank__toggle:checked ~ .sect-bank__box__cherry_5 {
+  top: 14%;
+  left: 26%;
+  transform: rotate(270deg);
+}
+.sect-bank__toggle:checked ~ .sect-bank__box__cherry_6 {
+  top: -1%;
+  left: 84%;
+  transform: rotate(270deg);
+}
+
+.testimg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.testimg__imgbox {
+  width: 100%;
+  height: 100%;
+  background: url(../img/seson_1.jpg) center/cover no-repeat;
+  scale: 110%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+.testimg__imgbox__img {
+  width: 100%;
+  height: 100%;
+  background: url(../img/seson_10.jpg) center/cover no-repeat;
+  filter: grayscale(0%);
+  scale: 110%;
+  backface-visibility: hidden;
+  animation: image-anime 7s;
+}
+.testimg__contbox {
+  width: 100%;
+  height: 80%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  opacity: 1;
+  scale: 100%;
+}
+.testimg__contbox h1 {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-family: "Penta";
+  color: white;
+  font-size: 8rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  z-index: 40;
+  transform: translate(-50%, -50%);
+  text-shadow: 0.3rem 0.3rem 0.3rem rgb(20, 20, 20);
+  backface-visibility: hidden;
+  animation: bouncetext 7s;
+}
+@keyframes bouncetext {
+  0% {
+    opacity: 0;
+    font-size: 14rem;
+    z-index: 7;
+  }
+  85% {
+    opacity: 0;
+    z-index: 7;
+    font-size: 14rem;
+  }
+  100% {
+    opacity: 1;
+    font-size: 8rem;
+    z-index: 40;
+  }
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.box__contbox {
+  width: 50%;
+  height: 40%;
+  border-radius: 1rem;
+  border: 2px solid white;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  opacity: 1;
+  scale: 100%;
+  z-index: 10;
+  backface-visibility: hidden;
+  animation: blurfon 7s;
+}
+@keyframes blurfon {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    z-index: 10;
+  }
+}/*# sourceMappingURL=stule_test_img.css.map */
