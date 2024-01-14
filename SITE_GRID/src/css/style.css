@@ -13,6 +13,11 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 400px) {
+  html {
+    font-size: 53%;
+  }
+}
 
 *, ::after, ::before {
   margin: 0;
@@ -249,6 +254,11 @@ p {
   grid-template-rows: 100vh min-content minmax(80vh, min-content) repeat(3, max-content);
   grid-template-columns: [sidebar-start] 6rem [sidebar-end full-start] minmax(2rem, 1fr) [centr-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [centr-end] minmax(2rem, 1fr) [full-end];
 }
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: [sidebar-start] 0rem [sidebar-end full-start] minmax(2rem, 1fr) [centr-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [centr-end] minmax(2rem, 1fr) [full-end];
+  }
+}
 .container > * {
   font-size: 2rem;
   padding: 2rem;
@@ -260,6 +270,11 @@ p {
   grid-column: sidebar-start/sidebar-end;
   grid-row: 1/-1;
   padding: 1rem;
+}
+@media (max-width: 700px) {
+  .sidebar {
+    display: none;
+  }
 }
 .sidebar__box {
   position: fixed;
@@ -312,6 +327,7 @@ p {
   flex-direction: column;
   justify-content: end;
   align-items: flex-end;
+  padding-bottom: 6rem;
 }
 .header__fon {
   position: absolute;
@@ -328,6 +344,7 @@ p {
 }
 .header__textbox {
   text-align: right;
+  padding-left: 1rem;
 }
 
 .headerleft {
@@ -343,6 +360,12 @@ p {
   position: absolute;
   top: 7%;
   left: 10%;
+}
+@media (max-width: 700px) {
+  .logoivn {
+    left: 0%;
+    top: 0%;
+  }
 }
 .logoivn__test {
   position: relative;
@@ -399,6 +422,7 @@ p {
   width: 17rem;
   top: 38%;
   left: 9%;
+  backface-visibility: hidden;
   animation: logotxt1 2.5s;
 }
 @keyframes logotxt1 {
@@ -414,6 +438,7 @@ p {
   position: absolute;
   top: 30%;
   left: 46%;
+  backface-visibility: hidden;
   animation: logotxt2 2.5s;
 }
 @keyframes logotxt2 {
@@ -428,6 +453,7 @@ p {
   top: 64%;
   left: 74%;
   width: 7rem;
+  backface-visibility: hidden;
   position: absolute;
   animation: logotxt2 2.5s;
 }
@@ -442,12 +468,6 @@ p {
 @media (max-width: 700px) {
   .logoivn__test {
     scale: 90%;
-  }
-}
-@media (max-width: 700px) {
-  .logoivn {
-    left: 0%;
-    top: 0%;
   }
 }
 
