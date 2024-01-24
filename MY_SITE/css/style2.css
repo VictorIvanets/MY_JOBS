@@ -1,0 +1,344 @@
+@font-face {
+  font-family: "Comfortaa-Light";
+  src: url("../fonts/Comfortaa-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Comfortaa-Medium";
+  src: url("../fonts/Comfortaa-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes image-anime {
+  0% {
+    background: rgba(0, 0, 0, 0);
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+    backface-visibility: hidden;
+  }
+  1% {
+    background: url(../img/fotoanime__1.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+    backface-visibility: hidden;
+  }
+  1% {
+    background: url(../img/fotoanime__1.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+    backface-visibility: hidden;
+  }
+  12% {
+    background: url(../img/fotoanime__1.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+    backface-visibility: hidden;
+  }
+  13% {
+    background: url(../img/fotoanime__2.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+    backface-visibility: hidden;
+  }
+  13% {
+    background: url(../img/fotoanime__2.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+    backface-visibility: hidden;
+  }
+  25% {
+    background: url(../img/fotoanime__2.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+    backface-visibility: hidden;
+  }
+  26% {
+    background: url(../img/fotoanime__3.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+    backface-visibility: hidden;
+  }
+  26% {
+    background: url(../img/fotoanime__3.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+    backface-visibility: hidden;
+  }
+  37% {
+    background: url(../img/fotoanime__3.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+    backface-visibility: hidden;
+  }
+  38% {
+    background: url(../img/fotoanime__4.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+    backface-visibility: hidden;
+  }
+  38% {
+    background: url(../img/fotoanime__4.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+    backface-visibility: hidden;
+  }
+  50% {
+    background: url(../img/fotoanime__4.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+    backface-visibility: hidden;
+  }
+  51% {
+    background: url(../img/fotoanime__5.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+    backface-visibility: hidden;
+  }
+  51% {
+    background: url(../img/fotoanime__5.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+    backface-visibility: hidden;
+  }
+  62% {
+    background: url(../img/fotoanime__5.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+    backface-visibility: hidden;
+  }
+  63% {
+    background: url(../img/fotoanime__6.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+    backface-visibility: hidden;
+  }
+  63% {
+    background: url(../img/fotoanime__6.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+    backface-visibility: hidden;
+  }
+  75% {
+    background: url(../img/fotoanime__6.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+    backface-visibility: hidden;
+  }
+  76% {
+    background: url(../img/fotoanime__7.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(0%);
+    backface-visibility: hidden;
+  }
+  76% {
+    background: url(../img/fotoanime__7.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 100%;
+    filter: grayscale(100%);
+    backface-visibility: hidden;
+  }
+  87% {
+    background: url(../img/fotoanime__7.png) center/cover no-repeat;
+    opacity: 1;
+    scale: 110%;
+    filter: grayscale(0%);
+    backface-visibility: hidden;
+  }
+  100% {
+    background: url(../img/fotoanime__7.png) center/cover no-repeat;
+    opacity: 0;
+    scale: 80%;
+    filter: grayscale(0%);
+    backface-visibility: hidden;
+  }
+}
+.header {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  grid-column: 1/3;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  padding-bottom: 6rem;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+.header__fon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  filter: grayscale(0%);
+  scale: 110%;
+  backface-visibility: hidden;
+  animation: image-anime 8s;
+  overflow: hidden;
+}
+.header__textbox {
+  text-align: right;
+  padding-left: 1rem;
+  color: white;
+  font-family: "Comfortaa-Medium";
+}
+.header__text {
+  margin-bottom: 5px;
+}
+.header__text_h {
+  font-size: 14pt;
+  margin-bottom: 7px;
+}
+
+.logoivn-hidden {
+  display: none;
+}
+
+.logoivn {
+  position: absolute;
+  top: 7%;
+  left: 10%;
+  backface-visibility: hidden;
+}
+@media (max-width: 500px) {
+  .logoivn {
+    left: -40%;
+    top: -5%;
+    scale: 50%;
+    backface-visibility: hidden;
+  }
+}
+.logoivn__test {
+  position: relative;
+  scale: 150%;
+  width: 45rem;
+  height: 30rem;
+  backface-visibility: hidden;
+  animation: logofon 2.5s;
+}
+@keyframes logofon {
+  0% {
+    transform: rotate(180deg);
+  }
+  99% {
+    transform: rotate(0deg);
+  }
+}
+.logoivn__test-1 {
+  position: absolute;
+  width: 14rem;
+  top: 37%;
+  left: 27%;
+  backface-visibility: hidden;
+  animation: logotop 2.5s;
+}
+@keyframes logotop {
+  0% {
+    opacity: 0;
+    scale: 250%;
+    top: -40%;
+    left: -40%;
+    fill: white;
+  }
+}
+.logoivn__test-2 {
+  position: absolute;
+  width: 15rem;
+  top: 62%;
+  left: 19%;
+  backface-visibility: hidden;
+  animation: logobut 2.5s;
+}
+@keyframes logobut {
+  0% {
+    opacity: 0;
+    scale: 250%;
+    top: 100%;
+    left: 100%;
+    fill: white;
+  }
+}
+.logoivn__test-3 {
+  position: absolute;
+  width: 17rem;
+  top: 38%;
+  left: 9%;
+  backface-visibility: hidden;
+  animation: logotxt1 2.5s;
+}
+@keyframes logotxt1 {
+  0% {
+    opacity: 0;
+    scale: 250%;
+    top: 38%;
+    left: -100%;
+  }
+}
+.logoivn__test-4 {
+  width: 20rem;
+  position: absolute;
+  top: 30%;
+  left: 46%;
+  backface-visibility: hidden;
+  animation: logotxt2 2.5s;
+}
+@keyframes logotxt2 {
+  0% {
+    opacity: 0;
+    scale: 250%;
+    top: 15%;
+    left: 100%;
+  }
+}
+.logoivn__test-5 {
+  top: 64%;
+  left: 74%;
+  width: 7rem;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: logotxt2 2.5s;
+}
+@keyframes logotxt2 {
+  0% {
+    opacity: 0;
+    scale: 250%;
+    top: 140%;
+    left: 150%;
+  }
+}
+@media (max-width: 700px) {
+  .logoivn__test {
+    scale: 90%;
+  }
+}/*# sourceMappingURL=style2.css.map */

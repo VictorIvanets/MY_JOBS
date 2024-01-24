@@ -1,0 +1,168 @@
+@import "varible.sass"    
+    
+
+.header
+    width: 100%
+    height: 100%
+    position: relative
+    grid-column: 1 / 3
+    padding: 5%
+    display: flex
+    flex-direction: column
+    justify-content: end
+    align-items: flex-end
+    padding-bottom: 6rem
+    overflow: hidden
+    backface-visibility: hidden
+
+    &__fon
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+        width: 100%
+        height: 100%
+        background: $img-8
+        filter: grayscale(0%)
+        scale: 110%
+        backface-visibility: hidden
+        animation: image-anime $time
+        overflow: hidden
+
+
+
+    &__textbox
+        text-align: right
+        padding-left: 1rem
+        color: white
+        font-family: "Comfortaa-Medium"
+    &__text
+        margin-bottom: 5px
+        &_h
+            font-size: 14pt
+            margin-bottom: 7px
+
+.logoivn-hidden  
+    display: none
+
+.logoivn
+    position: absolute
+    top: 7%
+    left: 10%
+    backface-visibility: hidden
+
+    @media (max-width: 500px)  
+        left: -40%
+        top: -5%
+        scale: 50%
+        backface-visibility: hidden
+
+
+    &__test
+        position: relative
+        scale: 150%
+        width: 45rem
+        height: 30rem
+        backface-visibility: hidden
+        animation: logofon $time-animation 
+        @keyframes logofon
+                0% 
+                  transform: rotate(180deg)  
+                79%
+                    
+                85%
+                    
+                99%
+                    transform: rotate(0deg)  
+                100%
+
+        &-1
+            position: absolute
+            width: 14rem
+            top: 37%
+            left: 27%
+            backface-visibility: hidden
+            animation: logotop $time-animation 
+            @keyframes logotop 
+                0%
+                    opacity: 0
+                    scale: 250%
+                    top: -40%
+                    left: -40%
+                    fill: white
+                100%
+
+
+        &-2
+            position: absolute
+            width: 15rem
+            top: 62%
+            left: 19%
+            backface-visibility: hidden
+            animation: logobut $time-animation 
+            @keyframes logobut 
+                0%
+                    opacity: 0
+                    scale: 250%
+                    top: 100%
+                    left: 100%
+                    fill: white
+                100%
+        &-3       
+            position: absolute
+            width: 17rem
+            top: 38%
+            left: 9%
+            backface-visibility: hidden
+            animation: logotxt1 $time-animation 
+            @keyframes logotxt1 
+                0%
+                    opacity: 0
+                    scale: 250%
+                    top: 38%
+                    left: -100%
+                100%
+
+        &-4
+            width: 20rem
+            position: absolute           
+            top: 30%
+            left: 46%
+            backface-visibility: hidden
+            animation: logotxt2 $time-animation 
+            @keyframes logotxt2 
+                0%
+                    opacity: 0
+                    scale: 250%
+                    top: 15%
+                    left: 100%
+                100%
+        &-5
+            top: 64%
+            left: 74%
+            width: 7rem
+            backface-visibility: hidden
+            position: absolute
+            animation: logotxt2 $time-animation 
+            @keyframes logotxt2 
+                0%
+                    opacity: 0
+                    scale: 250%
+                    top: 140%
+                    left: 150%
+                100%
+        @media (max-width: 700px)  
+            scale: 90%
+
+            
+        
+
+    
+
+
+
+
+
+            
+            
+

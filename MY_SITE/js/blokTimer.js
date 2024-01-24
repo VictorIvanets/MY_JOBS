@@ -1,28 +1,33 @@
 "use strict";
 
+setTimeout(function () {
+    document.querySelector(".logoivn").classList.toggle("logoivn-hidden");
+  }, 5000);
+  
+
 function timerPlus(){
-    setTimeout(function(){
-    document.querySelector(".blok1").classList.add("hidden-for-blok1")
-    },1000)
+    // setTimeout(function(){
+    // document.querySelector(".blok1").classList.add("hidden-for-blok1")
+    // },1000)
 
-    setTimeout(function(){
-        document.querySelector(".blok2").classList.add("hidden-for-blok2")
-        },2000)    
+    // setTimeout(function(){
+    //     document.querySelector(".blok2").classList.add("hidden-for-blok2")
+    //     },2000)    
 
-        setTimeout(function(){
-            document.querySelector(".blok3").classList.add("hidden-for-blok3")
-            },3000) 
+        // setTimeout(function(){
+        //     document.querySelector(".blok3").classList.add("hidden-for-blok3")
+        //     },3000) 
             setTimeout(function(){
                 document.querySelector(".blok3").classList.remove("hidden-for-blok3")
                 },9000) 
 
-            setTimeout(function(){
-                document.querySelector(".blok5").classList.add("hidden-for-blok5")
-                },3000) 
+            // setTimeout(function(){
+            //     document.querySelector(".blok5").classList.add("hidden-for-blok5")
+            //     },3000) 
 
-                setTimeout(function(){
-                    document.querySelector(".blok5").classList.add("up-for-blok5")
-                    },5000)     
+            //     setTimeout(function(){
+            //         document.querySelector(".blok5").classList.add("up-for-blok5")
+            //         },5000)     
 
             // setTimeout(function(){
             //     document.querySelector(".blok4").classList.add("hidden-for-blok3")
@@ -39,6 +44,7 @@ function timerPlus(){
             }
 
      timerPlus()
+
 
 
             setTimeout(function(){
@@ -201,7 +207,6 @@ allBlock.forEach(function(section){
 
 
 const image = document.querySelectorAll("img[data-src]")
-console.log(image)
 function loadImg(entries, observer){
 entries[0].target.src = entries[0].target.dataset.src 
 }
