@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ceea8526.css",
+    "main.js": "/static/js/main.a0d64726.js",
+    "static/media/Comfortaa-Medium.ttf": "/static/media/Comfortaa-Medium.e26e46e9ed19fd463a58.ttf",
+    "static/media/Comfortaa-Light.ttf": "/static/media/Comfortaa-Light.8d7e182e392e617a868f.ttf",
+    "static/media/movfon-01.png": "/static/media/movfon-01.b15814bba0618bf9205a.png",
+    "static/media/MovLogo-01.svg": "/static/media/MovLogo-01.cc293ee1daf117443712.svg",
+    "index.html": "/index.html",
+    "main.ceea8526.css.map": "/static/css/main.ceea8526.css.map",
+    "main.a0d64726.js.map": "/static/js/main.a0d64726.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ceea8526.css",
+    "static/js/main.a0d64726.js"
+  ]
+}
