@@ -32,6 +32,19 @@
     perspective: 1200px
     position: relative
     overflow: hidden
+    animation: start 7s ease
+    @keyframes start
+        0%
+            opacity: 0
+        5%
+            opacity: 0
+        30%    
+            opacity: 1
+        100%
+            opacity: 1
+
+
+
     &__container
         height: 100vh
         transform-style: preserve-3d
@@ -54,28 +67,59 @@
     left: -10%
     scale: 156%
     transform: translateZ(-40rem)
+    animation: desert 7s
+    @keyframes desert
+        0%
+            scale: 210% 
+        100%
+            scale: 156%
+
+            
+
+
 .layers-2
     scale: 95%
     transform: translateZ(8rem)
+    animation: rock 7s ease-out
+    @keyframes rock
+        0%
+            scale: 88%
+        100%
+            scale: 95%
+
 
 .layers-3
     position: absolute
     transform: translateZ(18rem)
     z-index: 4
+    animation: texts 7s ease-out
+    @keyframes texts
+        0%
+            scale: 110%
+        100%
+            scale: 100%
+
 .layers-4
     transform: translateZ(19rem)
+    pointer-events: none
 
 
 .layers-5
     position: absolute
     top: -20rem
     transform: translateZ(30rem)
+    pointer-events: none
+
+
     
 .layers-6
     scale: 80%
     transform: translateZ(60rem) 
     position: absolute
     z-index: 3
+    pointer-events: none
+
+
 
 .nain-head
     width: 80%

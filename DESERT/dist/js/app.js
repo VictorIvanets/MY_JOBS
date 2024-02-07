@@ -13,18 +13,20 @@ document.addEventListener('mousemove', e=>{
     
     })
 
-    document.querySelector('.linktodown').addEventListener('click', ()=>{
-        document.querySelector('.maincontent').classList.add("hiddenPages")
-        setTimeout(function(){
-            document.querySelector('.maincontent').classList.add("hiddenAllpages")
-            },700)  
-    })
+document.querySelector('.linktodown').addEventListener('click', ()=>{
+    document.querySelector('.maincontent').classList.add("hiddenPages")
+    setTimeout(function(){
+        document.querySelector('.maincontent').classList.add("hiddenAllpages")
+        },700)  
+})
 
-    document.querySelector('.linktodownAdd').addEventListener('click', ()=>{
-        document.querySelector('.maincontent').classList.remove("hiddenAllpages")
-        setTimeout(function(){
-            document.querySelector('.maincontent').classList.remove("hiddenPages")
-            },300)  
-    })
-    
-    
+
+document.querySelector('.linktodownAdd').addEventListener('click', ()=>{
+    document.querySelector('.maincontent').classList.remove("hiddenAllpages")
+    setTimeout(function(){
+        document.querySelector('.maincontent').classList.remove("hiddenPages")
+        },300)  
+})
+
+
+
