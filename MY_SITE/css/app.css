@@ -35,17 +35,14 @@
   font-style: normal;
 }
 
-@media (max-width: 400px) {
-  html {
-    font-size: 53%;
-  }
-}
 
 *, ::after, ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
 
 :root {
   --index: calc( 1vw + 1vh );
@@ -80,6 +77,21 @@
   perspective: 1200px;
   position: relative;
   overflow: hidden;
+  animation: start 7s ease;
+}
+@keyframes start {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .layers__container {
   height: 100vh;
@@ -102,27 +114,56 @@
   left: -10%;
   scale: 156%;
   transform: translateZ(-400px);
+  animation: desert 7s;
+}
+@keyframes desert {
+  0% {
+    scale: 210%;
+  }
+  100% {
+    scale: 156%;
+  }
 }
 
 .layers-2 {
   scale: 95%;
   transform: translateZ(80px);
+  animation: rock 7s ease-out;
+}
+@keyframes rock {
+  0% {
+    scale: 88%;
+  }
+  100% {
+    scale: 95%;
+  }
 }
 
 .layers-3 {
   position: absolute;
   transform: translateZ(180px);
   z-index: 4;
+  animation: texts 7s ease-out;
+}
+@keyframes texts {
+  0% {
+    scale: 110%;
+  }
+  100% {
+    scale: 100%;
+  }
 }
 
 .layers-4 {
   transform: translateZ(190px);
+  pointer-events: none;
 }
 
 .layers-5 {
   position: absolute;
   top: -200px;
   transform: translateZ(300px);
+  pointer-events: none;
 }
 
 .layers-6 {
@@ -130,6 +171,7 @@
   transform: translateZ(600px);
   position: absolute;
   z-index: 3;
+  pointer-events: none;
 }
 
 .nain-head {
@@ -143,7 +185,7 @@
   margin-top: calc(var(--index) * 2);
   font-family: "Fira";
   font-size: calc(var(--index) * 5);
-  letter-spacing: 2px;
+  letter-spacing: 0.20px;
   line-height: 140px;
   text-shadow: 2px 2px 2px black;
   backface-visibility: hidden;
@@ -172,12 +214,27 @@
 .nain-head__content__p {
   margin-top: 10px;
   font-family: "Comfortaa-Light";
-  font-size: calc(var(--index) * 0.5);
+  font-size: calc(var(--index) * 0.7);
   backface-visibility: hidden;
   color: white;
   cursor: pointer;
-  text-align: center;
+  animation: textsP 5s ease;
 }
+@keyframes textsP {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
 @media (max-width: 700px) {
   .nain-head__content__p {
     font-size: calc(var(--index) * 1.2);
@@ -188,10 +245,10 @@
   overflow: hidden;
   width: 1px;
   height: 1px;
-  transition: All 0.7s;
+  transition: All 1s;
 }
 
 .hiddenAllpages {
   display: none;
-  transition: All 0.7s;
+  transition: All 1s;
 }/*# sourceMappingURL=style.css.map */
